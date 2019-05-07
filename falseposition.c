@@ -37,13 +37,12 @@ int main(){
 
     while(fc > tol){
 
-        fc = function(c);
         if(fb*fc<0) a = c;
         else b = c;
         c = intersect(a, b);
         fa = function(a);
         fb = function(b);
-
+        fc = function(c);
         printf("%2d%12f%12f%12f%12f%12f%12f\n", ++i, a, b, fa, fb, c, fc);
     }
 

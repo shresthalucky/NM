@@ -32,7 +32,6 @@ int main(){
 
     while(fabs((a-b)/c) > tol){
 
-        fc = function(c);
         if((fa*fc)>0){
             a = c;
             fa = fc;
@@ -41,6 +40,7 @@ int main(){
             fb = fc;
         }
         c = (a+b)/2;
+        fc = function(c);
         printf("%2d%12f%12f%12f%12f%12f%12f\n", ++i, a, b, fa, fb, c, fc);
     }
 
