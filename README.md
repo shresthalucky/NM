@@ -32,7 +32,7 @@ ___
 3. Compute: f(a), f(b)
 4. IF f(a)*f(b) > 0 GOTO 2
 5. Determine: c = a-f(a)*(b-a)/(f(b)-f(a))
-6. IF f(b)*f(c) <> 0 THEN
+6. IF f(b)*f(c) < 0 THEN
         a = c
     ELSE
         b = c
